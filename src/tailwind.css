@@ -122,7 +122,6 @@
 
   .wave-container {
     width: 100%;
-    min-width: 680px;
     overflow: hidden;
     height: 650px;
     position: relative;
@@ -161,7 +160,6 @@
   @media (max-width: 768px) {
     .wave-container {
       width: 100vw;
-      min-width: 720px;
       overflow-x: hidden;
       height: 760px;
       position: relative;
@@ -172,5 +170,17 @@
       height: 100%;
       position: absolute;
     }
+  }
+
+  .navMargin {
+    margin-top: clamp(20px, 18vh, 64px);
+    margin-bottom: clamp(20px, 18vh, 64px);
+  }
+
+  .carousel-container {
+    overscroll-behavior: none;
+    scroll-padding: 0px 20px;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
   }
 }
